@@ -1,4 +1,4 @@
-News Summarization & Sentiment Analysis
+News Summarization and Sentiment Analysis
 Overview
 News Summarization & Sentiment Analysis is a tool that fetches the latest news articles about a company, summarizes them, performs sentiment analysis, and provides a comparative analysis. Additionally, it generates a Hindi text-to-speech (TTS) audio summary of the final sentiment analysis.
 
@@ -18,42 +18,38 @@ Provides a final sentiment analysis summarizing the overall news sentiment.
 Generates a Hindi audio summary of the sentiment analysis.
 
 Technologies Used
-Python (Backend processing)
+Python → Backend processing
 
-FastAPI (API development)
+FastAPI → API development
 
-Streamlit (Frontend interface)
+Streamlit → Frontend interface
 
-BeautifulSoup (Web scraping for news articles)
+BeautifulSoup → Web scraping for news articles
 
-Groq API (For summarization, sentiment analysis, and topic extraction)
+Groq API → Summarization, sentiment analysis, and topic extraction
 
-Google Translator (For English-to-Hindi translation)
+Google Translator → English-to-Hindi translation
 
-gTTS (For Hindi text-to-speech audio generation)
+gTTS → Hindi text-to-speech audio generation
 
 Installation
-Clone the repository:
-
+1. Clone the Repository
 bash
 Copy
 Edit
 git clone <repository-url>
 cd <repository-folder>
-Install dependencies:
-
+2. Install Dependencies
 bash
 Copy
 Edit
 pip install -r requirements.txt
-Run the FastAPI backend:
-
+3. Run the FastAPI Backend
 bash
 Copy
 Edit
 uvicorn api:app --host 0.0.0.0 --port 8000 --reload
-Run the Streamlit frontend:
-
+4. Run the Streamlit Frontend
 bash
 Copy
 Edit
@@ -70,11 +66,11 @@ Download the full report as a JSON file.
 Download the Hindi audio summary.
 
 Deployment
-You can deploy this project on:
+This project can be deployed on:
 
-Hugging Face Spaces (for Streamlit apps)
+Hugging Face Spaces → For Streamlit frontend
 
-Render or AWS EC2 (for FastAPI backend)
+Render or AWS EC2 → For FastAPI backend
 
 License
 This project is licensed under the MIT License.
