@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+transformers
+beautifulsoup4
+requests
+gtts
+streamlit
+deep-translator
