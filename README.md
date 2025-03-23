@@ -1,76 +1,29 @@
-News Summarization and Sentiment Analysis
-Overview
-News Summarization & Sentiment Analysis is a tool that fetches the latest news articles about a company, summarizes them, performs sentiment analysis, and provides a comparative analysis. Additionally, it generates a Hindi text-to-speech (TTS) audio summary of the final sentiment analysis.
+# News Summarization & Sentiment Analysis
 
-Features
-Fetches real-time news articles for any company.
+## Overview
+**News Summarization & Sentiment Analysis** is a tool that fetches the latest news articles about a company, summarizes them, performs sentiment analysis, and provides a comparative analysis. Additionally, it generates a **Hindi text-to-speech (TTS) audio summary** of the final sentiment analysis.
 
-Summarizes each article in a single sentence.
+## Features
+- Fetches **real-time news articles** for any company.
+- Summarizes each article in a **single sentence**.
+- Performs **sentiment analysis** (Positive, Negative, or Neutral).
+- Extracts **key topics** from articles.
+- Compares articles to highlight **differences in coverage and sentiment**.
+- Provides a **final sentiment analysis** summarizing the overall news sentiment.
+- Generates a **Hindi audio summary** of the sentiment analysis.
 
-Performs sentiment analysis (Positive, Negative, or Neutral).
+## Technologies Used
+- **Python** → Backend processing
+- **FastAPI** → API development
+- **Streamlit** → Frontend interface
+- **BeautifulSoup** → Web scraping for news articles
+- **Groq API** → Summarization, sentiment analysis, and topic extraction
+- **Google Translator** → English-to-Hindi translation
+- **gTTS** → Hindi text-to-speech audio generation
 
-Extracts key topics from articles.
+## Installation
+### 1. Clone the Repository
+```bash
+git clone https://github.com/Disha1001/News-Summarization-and-Sentiment-Analysis.git
+cd News-Summarization-and-Sentiment-Analysis
 
-Compares articles to highlight differences in coverage and sentiment.
-
-Provides a final sentiment analysis summarizing the overall news sentiment.
-
-Generates a Hindi audio summary of the sentiment analysis.
-
-Technologies Used
-Python → Backend processing
-
-FastAPI → API development
-
-Streamlit → Frontend interface
-
-BeautifulSoup → Web scraping for news articles
-
-Groq API → Summarization, sentiment analysis, and topic extraction
-
-Google Translator → English-to-Hindi translation
-
-gTTS → Hindi text-to-speech audio generation
-
-Installation
-1. Clone the Repository
-bash
-Copy
-Edit
-git clone <repository-url>
-cd <repository-folder>
-2. Install Dependencies
-bash
-Copy
-Edit
-pip install -r requirements.txt
-3. Run the FastAPI Backend
-bash
-Copy
-Edit
-uvicorn api:app --host 0.0.0.0 --port 8000 --reload
-4. Run the Streamlit Frontend
-bash
-Copy
-Edit
-streamlit run app.py
-Usage
-Enter a company name in the input field.
-
-Click "Generate Report" to fetch and analyze news.
-
-Once the report is ready, you can:
-
-Download the full report as a JSON file.
-
-Download the Hindi audio summary.
-
-Deployment
-This project can be deployed on:
-
-Hugging Face Spaces → For Streamlit frontend
-
-Render or AWS EC2 → For FastAPI backend
-
-License
-This project is licensed under the MIT License.
