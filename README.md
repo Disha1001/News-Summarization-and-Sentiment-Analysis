@@ -25,5 +25,14 @@
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/Disha1001/News-Summarization-and-Sentiment-Analysis.git
-cd News-Summarization-and-Sentiment-Analysis
+cd News-Summarization-and-Sentiment-Analysis`
+
+### 2. Install Dependencies
+```bash
+pip install -r requirements.txt
+
+### 3. Run the FastAPI Backend
+```bash
+uvicorn api:app --host 0.0.0.0 --port 8000 --reload
+
 
